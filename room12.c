@@ -10,6 +10,7 @@ void main(void)
 {
 	 int choice=0;
 	 char name[30];
+	 char guess[30];
 	 int input=0;
 	 srand(time(NULL));
 
@@ -93,8 +94,9 @@ void main(void)
 			else if(input==3)
 			{
 				puts("Welcome to Guess the word Game");
+				puts("Used to ride in parks");
+				
 			}
-
 			else if(input==4)
 			{
 				puts("Welcome to Roll the Dice Game");
