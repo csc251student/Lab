@@ -9,6 +9,7 @@
 void main(void)
 {
 	 int choice=0;
+	 char name[30];
 	 int input=0;
 	 srand(time(NULL));
 
@@ -71,6 +72,22 @@ void main(void)
 			else if(input==2)
 			{
 				puts("Welcome to the word Modification Game");
+				printf("Write a word and see its uppercase and lowercase\n");
+				int i=0;
+				scanf("%s",name);
+
+				for(i=0; name[i]!='\0'; i++)
+				{
+				name[i]=toupper(name[i]);
+				}
+
+				printf("%s\n", name);
+				for(i=0; name[i]!='\0'; i++)
+				{
+				name[i]=tolower(name[i]);
+				}
+
+				printf("%s\n", name);
 			}
 
 			else if(input==3)
